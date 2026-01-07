@@ -46,5 +46,6 @@ class Cluster<T extends ClusterItem> {
   }
 
   bool operator ==(o) => o is Cluster && items == o.items;
+
   int get hashCode => items.hashCode;
 }
